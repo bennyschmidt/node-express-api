@@ -1,32 +1,23 @@
-## Node Express API
+### Node Express API
 
 A Node/Express API boilerplate with options, easy endpoint definition, body parsing, and a basic status page.
 
 -----
 
-#### MIT License
-
------
-
-#### Clone from GitHub
+#### New Project: Clone from GitHub
 
 ```
 git clone https://github.com/exactchange/node-express-api.git
 ```
-
-Import using `require`:
-
 ```
 const NodeExpressApi = require('../lib/NodeExpressApi');
 ```
 
-#### Or, install into your current project with NPM
+#### Existing Project: Install with NPM
+
 ```
 npm install node-express-api
 ```
-
-Import using `require`:
-
 ```
 const NodeExpressApi = require('./node_modules/node-express-api');
 ```
@@ -75,8 +66,11 @@ Handle the desired status page route with with the `renderStatusPage` method:
 { type: 'get', path: '/', handler: 'renderStatusPage' }
 ```
 
-#### Start the API
+#### Serve the API
 
 ```
 node api
 ```
+#### License
+
+MIT
