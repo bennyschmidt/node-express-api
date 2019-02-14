@@ -11,7 +11,7 @@ A Node/Express API boilerplate with options, easy endpoint definition, body pars
 #### Clone from GitHub
 
 ```
-https://github.com/exactchange/node-express-api.git
+git clone https://github.com/exactchange/node-express-api.git
 ```
 
 #### Install using NPM
