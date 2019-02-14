@@ -1,6 +1,6 @@
 ## Node Express API
 
-A Node/Express API boilerplate, complete with options, body parsing, and a basic status page.
+A Node/Express API boilerplate with options, easy endpoint definition, body parsing, and a basic status page.
 
 -----
 
@@ -8,8 +8,13 @@ A Node/Express API boilerplate, complete with options, body parsing, and a basic
 
 -----
 
-#### Install with NPM
+#### Clone from GitHub
 
+```
+https://github.com/exactchange/node-express-api.git
+```
+
+#### Install using NPM
 ```
 npm install node-express-api
 ```
@@ -55,7 +60,7 @@ new userApi;
 Handle the desired status page route with with the `renderStatusPage` method:
 
 ```
-  { type: 'get', path: '/', handler: 'renderStatusPage' }
+{ type: 'get', path: '/', handler: 'renderStatusPage' }
 ```
 
 #### Start the API
