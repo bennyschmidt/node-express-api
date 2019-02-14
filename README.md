@@ -14,9 +14,21 @@ A Node/Express API boilerplate with options, easy endpoint definition, body pars
 git clone https://github.com/exactchange/node-express-api.git
 ```
 
-#### Install using NPM
+Import using `require`:
+
+```
+const NodeExpressApi = require('../lib/NodeExpressApi');
+```
+
+#### Or, install into your current project with NPM
 ```
 npm install node-express-api
+```
+
+Import using `require`:
+
+```
+const NodeExpressApi = require('./node_modules/node-express-api');
 ```
 
 #### Define a new API
