@@ -41,13 +41,13 @@ class userApi extends NodeExpressApi {
     super(requests, options);
   }
 
-  createUser(req, res) { /* */ }
+  createUser(req, res) { }
 
-  getUser(req, res) { /* */ }
+  getUser(req, res) { }
 
-  updateUser(req, res) { /* */ }
+  updateUser(req, res) { }
 
-  deleteUser(req, res) { /* */ }
+  deleteUser(req, res) { }
 
 }
 ```
@@ -66,7 +66,7 @@ Handle the desired status page route with with the `renderStatusPage` method:
 { type: 'get', path: '/', handler: 'renderStatusPage' }
 ```
 
-#### Serve the API
+#### Run the API
 
 ```
 node api
