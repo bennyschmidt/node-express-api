@@ -1,5 +1,6 @@
 ## Node Express API
-#### A Node/Express API boilerplate, complete with options, body parsing, and a basic status page.
+
+A Node/Express API boilerplate, complete with options, body parsing, and a basic status page.
 
 -----
 
@@ -10,7 +11,7 @@
 #### Install with NPM
 
 ```
-  npm install node-express-api
+npm install node-express-api
 ```
 
 #### Define a new API
