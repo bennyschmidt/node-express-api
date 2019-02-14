@@ -1,0 +1,13 @@
+{
+  "name": "node-express-api",
+  "author": "Benny Schmidt",
+  "description": "A Node/Express API boilerplate with options, easy endpoint definition, body parsing, and a basic status page.",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "1.x",
+    "cors": ">= 2.8.x",
+    "express": "4.x",
+    "request": "2.x"
+  },
+  "devDependencies": {}
+}
