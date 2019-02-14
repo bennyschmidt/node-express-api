@@ -1,12 +1,17 @@
 ## Node Express API
 #### A Node/Express API boilerplate, complete with options, body parsing, and a basic status page.
+
+-----
+
 #### MIT License
 
 -----
 
-### Install with NPM
+#### Install with NPM
 
-Coming soon.
+```
+  npm install node-express-api
+```
 
 #### Define a new API
 
