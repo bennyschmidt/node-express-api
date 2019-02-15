@@ -9,9 +9,6 @@ A Node/Express API boilerplate with easy endpoint definition, body parsing, and 
 ```
 git clone https://github.com/exactchange/node-express-api.git
 ```
-```
-const NodeExpressApi = require('../lib/NodeExpressApi');
-```
 
 #### Existing Project: Install with NPM
 
@@ -50,12 +47,6 @@ class userApi extends NodeExpressApi {
   deleteUser(req, res) { }
 
 }
-```
-
-#### Instantiate your newly defined API
-
-```
-new userApi;
 ```
 
 #### Render a status page
