@@ -1,6 +1,6 @@
 'use strict';
 
-const Express = require('Express');
+const Express = require('express');
 const parser = require('body-parser');
 const request = require('request');
 const cors = require('cors');
