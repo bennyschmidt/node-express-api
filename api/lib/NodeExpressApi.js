@@ -1,6 +1,7 @@
 'use strict';
 
 const Express = require('express');
+const expressVersion = require('express/package').version;
 const parser = require('body-parser');
 const request = require('request');
 const cors = require('cors');
@@ -57,7 +58,7 @@ class NodeExpressApi {
         }
       });
     });
-    console.log('\n\nAPI STATUS: ONLINE\nPORT: ' + this.port + '\n\n');
+    console.log(`<< ${new Date().toString()} >> Express v${expressVersion} (via node-express-api) :: Port ${this.port}`);
   }
 
   renderStatusPage(req, res) {
