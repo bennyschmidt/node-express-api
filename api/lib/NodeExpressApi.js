@@ -8,7 +8,6 @@ const cors = require('cors');
 const fs = require('fs');
 
 class NodeExpressApi {
-
   constructor(routes, options, methods) {
     this.path = __dirname;
     this.port = process.env.PORT || 1337;
@@ -53,12 +52,10 @@ class NodeExpressApi {
             return this[route.handler].apply(this, [body, res]);
           });
         }
-        if(req.method === 'GET') {
-          return this[route.handler].apply(this, [null, res]);
-        }
+        return this[route.handler].apply(this, [req, res]);
       });
     });
-    console.log(`<< ${new Date().toString()} >> Express v${expressVersion} (via node-express-api) :: Port ${this.port}`);
+    console.log(`\x1b[32m<< ${new Date().toString()} >> Express v${expressVersion} (via node-express-api) :: Port ${this.port}\x1b[0m`);
   }
 
   renderStatusPage(req, res) {
