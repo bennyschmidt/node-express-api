@@ -62,6 +62,3 @@ Handle the desired status page route with with the `renderStatusPage` method:
 ```
 node api
 ```
-#### License
-
-MIT
