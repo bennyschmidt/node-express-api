@@ -1,6 +1,6 @@
 ### Node Express API
 
-A Node/Express API boilerplate with easy endpoint definition, body parsing, and a basic status page.
+A fast, declarative, and flexible library for building RESTful APIs.
 
 -----
 

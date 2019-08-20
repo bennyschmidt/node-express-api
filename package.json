@@ -1,8 +1,8 @@
 {
   "name": "node-express-api",
   "author": "@exactchange",
-  "description": "A Node/Express API boilerplate with options, easy endpoint definition, body parsing, and a basic status page.",
-  "version": "1.0.6",
+  "description": "A fast, declarative, and flexible library for building RESTful APIs.",
+  "version": "1.0.7",
   "dependencies": {
     "body-parser": "1.x",
     "cors": ">= 2.8.x",
