@@ -55,7 +55,7 @@ class NodeExpressApi {
         return this[route.handler].apply(this, [req, res]);
       });
     });
-    console.log(`\x1b[32m<< ${new Date().toString()} >> Express v${expressVersion} (via node-express-api) :: Port ${this.port}\x1b[0m`);
+    console.log(this.options.startMessage || `\x1b[32m<< ${new Date().toString()} >> Express v${expressVersion} is running on Node.js ${process.version} (V8).\x1b[0m`);
   }
 
   renderStatusPage(req, res) {
