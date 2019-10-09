@@ -2,11 +2,12 @@
   "name": "node-express-api",
   "author": "@exactchange",
   "description": "A fast, declarative, and flexible library for building APIs.",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "dependencies": {
     "body-parser": "1.x",
     "cors": ">= 2.8.x",
     "express": "4.x",
-    "request": "2.x"
+    "request": "2.x",
+    "socket.io": "2.2"
   }
 }
