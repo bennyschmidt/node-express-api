@@ -1,8 +1,8 @@
 {
   "name": "node-express-api",
   "author": "@exactchange",
-  "description": "A fast, declarative, and flexible library for building RESTful APIs.",
-  "version": "1.0.8",
+  "description": "A fast, declarative, and flexible library for building APIs.",
+  "version": "1.0.9",
   "dependencies": {
     "body-parser": "1.x",
     "cors": ">= 2.8.x",

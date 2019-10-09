@@ -6,6 +6,7 @@ const parser = require('body-parser');
 const request = require('request');
 const cors = require('cors');
 const fs = require('fs');
+const io = require('socket.io');
 
 class NodeExpressApi {
   constructor(routes, options, methods) {
@@ -36,7 +37,13 @@ class NodeExpressApi {
       }
       return next();
     });
-    this.middleware.listen(this.port);
+    if(options.wsConnection === true) {
+      this.ws = io();
+      this.ws.listen(this.middleware.listen(this.port));
+    }
+    else {
+      this.middleware.listen(this.port);
+    }
     this.routes.forEach((route, index) => {
       this.middleware[route.type](route.path, cors(), (req, res) => {
         let body, buffer = '';
