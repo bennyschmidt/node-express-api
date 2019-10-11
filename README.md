@@ -26,8 +26,10 @@ class userApi extends NodeExpressApi {
 
   constructor() {
     const options = {
-      redirectToHttps: true
+      redirectToHttps: true,
+      wsConnection: false
     };
+
     const requests = [
       { type: 'get', path: '/', handler: 'renderStatusPage' },
       { type: 'post', path: '/user', handler: 'createUser' },
@@ -35,6 +37,7 @@ class userApi extends NodeExpressApi {
       { type: 'put', path: '/user', handler: 'updateUser' },
       { type: 'delete', path: '/user', handler: 'deleteUser' }
     ];
+
     super(requests, options);
   }
 
