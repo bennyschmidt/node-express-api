@@ -16,12 +16,12 @@ class NodeExpressApi {
     this.routes = this.routes || routes;
     this.options = this.options || options;
     
-    this.bindAll(methods);
+    this.bindAll.call(this, methods);
     
     this.middleware.use(Express.static(this.path + '/build'));
     this.middleware.use(parser.urlencoded({ extended: true }));
     this.middleware.use(parser.json());
-    this.middleware.use(redirectToHttps);
+    this.middleware.use(this.redirectToHttps.bind(this));
     
     if (options.wsConnection === true) {
       this.ws = io();
