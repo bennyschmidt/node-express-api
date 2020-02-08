@@ -2,23 +2,6 @@
 
 A fast, declarative, and flexible library for building RESTful APIs.
 
------
-
-#### New Project: Clone from GitHub
-
-```
-git clone https://github.com/exactchange/node-express-api.git
-```
-
-#### Existing Project: Install with NPM
-
-```
-npm install node-express-api
-```
-```
-const NodeExpressApi = require('./node_modules/node-express-api');
-```
-
 #### Define a new API
 
 ```
