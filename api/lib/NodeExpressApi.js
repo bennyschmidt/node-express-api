@@ -45,7 +45,7 @@ class NodeExpressApi {
             buffer += data.toString();
           }).on('end', () => {
             req.bodyraw = buffer;
-            body = JSON.parse(req.bodyraw);
+            body = JSON.parse(req.bodyraw || '{}');
 
             return this[route.handler].apply(this, [body, res]);
           });
